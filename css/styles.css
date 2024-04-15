@@ -1,0 +1,156 @@
+/* Geral e reset */
+* {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+#box-shadow-generate {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#controls-container,
+#preview {
+    flex: 1;
+    padding: 2rem;
+}
+
+
+/* Controles */
+.form-control {
+    display: flex;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.8rem;
+}
+
+.range-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Range input */
+.range-input input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 24px;
+    background-color: #d3d3d3;
+    outline: none;
+
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #e9d60a;
+    cursor: pointer;
+}
+
+
+/* Reference input */
+.reference-input {
+    display: flex;
+    align-items: center;
+}
+
+.reference-input p {
+    margin-left: 4px;
+}
+
+.reference-input input[type="text"] {
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+
+/* Novas funcionalidades */
+#color-value {
+    width: 100%;
+}
+
+#inset {
+    align-self: start;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Preview */
+#box {
+    width: 100%;
+    height: 300px;
+    background-color: #e9d60a;
+}
+
+
+/* Área de geração */
+#generated-rule {
+    text-align: center;
+}
+
+#generated-rule p {
+    margin-bottom: 0.5rem;
+}
+
+#rules-area {
+    background-color: #d3d3d3;
+    border: 2px solid #e9d60a;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    transition: 0.4s;
+}
+
+#rules-area:hover {
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+    #box-shadow-generate {
+        flex-direction: column;
+    }
+    
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 3rem auto 6rem;
+    }
+}
+
+#box {
+    background-color: rgba(red, green, blue, alpha);
+}
